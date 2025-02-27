@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRIS A4</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+        }
+        img {
+            width: 80%;
+            height: auto;
+            max-height: 90%;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .container {
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="qris.png" alt="QRIS Code">
+    </div>
+</body>
+</html>
